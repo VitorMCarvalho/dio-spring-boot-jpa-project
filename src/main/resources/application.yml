@@ -1,0 +1,19 @@
+
+server.port: 3333
+spring:
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5432/postgres?useTimezone=true&serverTimezone=UTC&useLegacyDate
+    username: tester
+    password: 12345
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate.format_sql: true
+
+logging:
+  level:
+    org:
+      hibernate:
+        type: trace
